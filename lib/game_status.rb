@@ -17,11 +17,11 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-WIN_COMBINATIONS.detect do |combo|
-    position_1 = board[combo[0]] # load the value of the board at win_index_1
-    position_2 = board[combo[1]] # load the value of the board at win_index_2
-    position_3 = board[combo[2]] # load the value of the board at win_index_3
-    position_1 == position_2 && position_2 == position_3 && position_taken?(board, combo[0])
+  WIN_COMBINATIONS.detect do |combo|
+      position_1 = board[combo[0]] # load the value of the board at win_index_1
+      position_2 = board[combo[1]] # load the value of the board at win_index_2
+      position_3 = board[combo[2]] # load the value of the board at win_index_3
+      position_1 == position_2 && position_2 == position_3 && position_taken?(board, combo[0])
   end
 end
 
